@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Tên: <span id="ten_id">?</span></div>
+    <div>Tuổi: <span id="sotuoi_id">?</span></div>
+    <div>Ngoại hình: <span id="ngoaihinh_id">?</div>
+    <div>Tính cách: <span id="tinhcach_id">?</span></div>
+</body>
+<script>
+    //Phần tuổi:
+    var tuoi = 10 + Math.floor(Math.random() * 60);
+    var element_sotuoi = document.getElementById("sotuoi_id");
+    element_sotuoi.innerHTML = tuoi.toString();
+    //Phần họ:
+    var surnames = ["Nguyễn Văn", "Lê Hoàng", "Trần Gia", "Nguyễn Thái", "Nguyễn Thiện", "Hà Cẩm"];
+    var so_ngau_nhien_ho = Math.floor(Math.random() * 6);
+    //Phần tên:
+    var names = ["Khánh", "Long", "Tuấn", "Phúc", "Quân", "Đông", "Ken"];
+    var so_ngau_nhien_ten = Math.floor(Math.random() * 7);
+    //Phần ngoại hình:
+    var ngoaihinh = ["cao", "thấp", "béo", "gầy", "mũm mĩm", "đẹp trai", "xinh đẹp"];
+    var so_ngau_nhien_ngoai_hinh = Math.floor(Math.random() * 7);
+    //Phần tính cách:
+     var tinhcach = ["hiền lành", "tốt bụng", "nóng tính", "vui vẻ", "hòa đồng", "thân thiện"];
+    var so_ngau_nhien_tinh_cach = Math.floor(Math.random() * 6);
+    var element_ten = document.getElementById("ten_id");
+    element_ten.innerHTML = surnames[so_ngau_nhien_ho] + " " + names[so_ngau_nhien_ten];
+    var element_ngoaihinh = document.getElementById("ngoaihinh_id")
+    element_ngoaihinh.innerHTML = ngoaihinh[so_ngau_nhien_ngoai_hinh];
+    var element_tinhcach = document.getElementById("tinhcach_id")
+    element_tinhcach.innerHTML = tinhcach[so_ngau_nhien_tinh_cach];
+</script>
+</html>

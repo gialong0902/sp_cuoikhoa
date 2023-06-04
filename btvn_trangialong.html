@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Tên: </label> <input id="inp-ths"> <br/>
+    <label>Lớp: </label> <input id="inp-tl"> <br/>
+    <label>Số điểm: </label> <input id="inp-sd"> <br/>
+    <button id="nutdangky" onclick="chucnang_dangky()">Xác nhận</button>
+</body>
+<script>
+function chucnangdangky() {
+    var noidung_tenhocsinh = document.getElementById("inp-ths").value;
+    var noidung_tenlop = document.getElementById("inp-tl").value;
+    var noidung_sodiem = document.getElementById("inp-sd").value;
+}
+
+//lưu dữ dữ liệu
+            localStorage.setItem("tk_"+noidung_tenhocsinh,noidung_tenlop,noidung_sodiem, newJSON);
+</script>
+</html>
